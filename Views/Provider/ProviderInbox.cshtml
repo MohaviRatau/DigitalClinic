@@ -1,0 +1,45 @@
+@{
+    ViewData["Title"] = "Provider Inbox";
+    Layout = "_LayoutBS";
+}
+
+@model Message
+
+<div class="row">
+    <div class="col-12 col-sm-4">
+        <div class="list-group">
+            <div class="card m-3 p-3 bg-gray-500" aria-current="true"> List of Conversations</div>
+            <div class="card m-3 p-3">
+                @foreach (Patient i in ViewBag.AllPatients)
+                {
+                    
+                    bool unreadMessageByThread = false;
+
+                    foreach(var m in ViewBag.AllMessages)
+                    {
+                        if(m.Provider.UserId == ViewBag.UserLoggedIn.UserId && m.PatientId == i.PatientId && m.Read == false && m.WriterId !=  ViewBag.UserLoggedIn.UserId)
+                        {
+                            unreadMessageByThread = true;
+                        }
+                    }
+
+                    <div class="card m-3 p-3" value="@i.PatientId"
+                    onclick="ShowProviderMessages(@ViewBag.UserLoggedIn.UserId, @ViewBag.Provider.ProviderId, @i.PatientId)">@i.User.FirstName
+                        @i.User.LastName
+                        @if (unreadMessageByThread)
+                        {
+                            <span class="position-absolute top-0 start-100translate-middle p-2 bg-danger border border-light rounded-circle">
+                                <span class="visually-hidden">New alerts</span>
+                            </span>
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-sm-8">
+        <div id="PrInbox"> </div>
+    </div>
+
+</div>
