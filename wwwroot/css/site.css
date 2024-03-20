@@ -1,0 +1,100 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 40px; /* Vertically center the text there */
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+
+.form-signin input[type="email"] {
+  margin-bottom: 0px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.rounded-4 {
+  border-radius: 0.5rem !important;
+}
+.rounded-5 {
+  border-radius: 0.7rem !important;
+}
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Footer height */
+}
+
+#medical-notes-card {
+  min-height: 264px;
+  opacity: 0;
+  -moz-animation: ease-in-out 1s;
+  -webkit-animation: ease-in-out 1s;
+  animation: ease-in-out 1s;
+}
+textarea:focus-visible.form-control-plaintext {
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+}
+
+.btn-left-sidebar {
+  width: 3.8rem;
+  height: 3.8rem;
+  line-height: 3rem;
+  border: 2px solid;
+}
+.btn-left-sidebar:hover {
+  border: 2px solid;
+}
+div#apptTable1_info.dataTables_info {padding: 0;}
+table#apptTable1 {margin: 0!important;}
+
+.imgprofile{
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+  margin: auto;text-align: center;line-height: 130px;}
+.imgprofile img{
+  width: 90%;
+  height: 90%;
+  object-fit: cover;}
