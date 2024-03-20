@@ -1,10 +1,12 @@
 # Virtual Clinic
 ### about
 ***Virtual Clinic*** 
-is an online clinic to connect patients and doctors (providers) remotely, via an application that allows real-time interaction between the patient and the doctor.
+is an online clinic to connect patients and doctors (providers) remotely, via an application that allows real-time int
+eraction between the patient and the doctor.
+
 
 The project's MVP is to create an interface for the Patient, Provider and Manager to be able to register a patient, schedule an appointment, assist the patient via a video conference (Telemedicine).
-
+test pushing code
 The language used is `C#`, with `Entityframework`, `razor and JavaScript FrontEnd, Bootstrap and FontAwesome Icons libaries` and others.
 
 -----------
